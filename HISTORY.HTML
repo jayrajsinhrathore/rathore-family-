@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legends of Rathore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #9b111e;
+            color: #4b3d3d;
+        }
+        h1 {
+            text-align: center;
+            color: #f8f8f8;
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+        }
+        img.logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 250px;
+        }
+        .history-section, .gallery-section {
+            background: #eae0d5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 30px;
+            color: #4b3d3d;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .gallery-section {
+            text-align: center;
+        }
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .gallery-images img {
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hidden by default */
+        .more-history {
+            display: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .gallery-images {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-images {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .history-section {
+                padding: 15px;
+            }
+
+            .image-section img {
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-images {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Legends of Rathore</h1>
+<img src="lllogo.png" alt="Logo" class="logo">
+
+<!-- Dhandhal Ji History -->
+<div class="history-section">
+    <h2>Dhandhal Ji: The Noble Patriarch</h2>
+    <p>
+        Dhandhal Rathore, the revered father of Pabuji, was a chieftain who laid the foundation for the Rathore legacy. Known for his wisdom and bravery, he guided his family through turbulent times.
+    </p>
+    </div>
+</div>
+
+<!-- Pabuji History -->
+<div class="history-section">
+    <h2>Pabuji: The Eternal Warrior</h2>
+    <p>
+        Dhandhal Rathore had four children, two sons (Buro and Pabuji) and two daughters (Sonalbai and Pemabai). When he died, both his sons set up court in their village of Kolu; but Pabuji was a god incarnate, born not from Dhandhal's wife but from a celestial nymph who had promised him that when he was twelve years old she would return to him in the form of a mare for him to ride. He had four companions: Chando and Dhebo, two brothers of whom Dhebo was a colossus with an insatiable appetite for food, drink and opium, and immensely aggressive; Salji Solanki the augurer; and Harmal the Rebari herdsman.
+    </p>
+    <button onclick="toggleMoreHistory()">More</button>
+    <div class="more-history" id="more-history">
+        <p>
+            Pabuji's first exploit was to fight the Khinchis, who were encroaching on his borders and treating him and Buro arrogantly. In the course of the fight Jindrao Khinchi's father was killed. To try to prevent a blood-feud, Pabuji and Buro gave Khinchi their sister Pema in marriage. But in fact he remained hostile, and his hostility was brought to a head when Pabuji secured from the Charan lady Deval (an incarnation of the Goddess) the fine black mare Kesar Kalami, on whom Khinchi had set his heart. The mare was, of course, Pabuji's mother returned to him. In exchange for the mare, Pabuji promised to protect Deval from Khinchi's raids.
+        </p>
+        <p>
+            Then he set off on his exploits: he overthrew Mirza Khan, the cow-killing king of Patan, and then went to bathe in the holy lake of Pushkar to cleanse himself of the sin of bloodshed. Whilst he was bathing his foot slipped, and he was saved from drowning by the snake-god Baba Goga devji Chauhan. As a reward Pabuji offered him the hand of his niece Kelam, Buro's daughter, and he accepted. But Kelam's parents were fiercely opposed to any such wedding, and so Pabuji set up a subterfuge instead. At his instigation, Gogaji turned himself into a venomous snake and concealed himself in the garden; and when Kelam came there to swing he bit her on the little finger. The curers were unable to do anything for her, but Pabuji said that she could be cured by tying on her arm an amulet in Gogaji's name, provided that she was then married to him. The cure worked and the wedding had to go ahead.
+        </p>
+        <!-- More extended content can be added here -->
+    </div>
+    <div class="image-section">
+        <img src="oldpabuji.jpeg" alt="Pabuji Image">
+    </div>
+</div>
+
+<!-- Nagnechi Maa History -->
+<div class="history-section">
+    <h2>Nagnechi Maa: The Divine Protector</h2>
+    <p>
+        Rao Dhuhad or Rao Dhuhar brought sculpture of Nagnechi maa. He bought this sculpture from Karnataka state of India between 1295-1305. A Temple was made at Nagaana for Nagnechi maa. Maa Nagnechi is Kuldevi of Rathore of Marwar.
+        Nagnechi Maa, the revered goddess of the Rathore clan, is venerated for her role as a protector and a guide. Her blessings are sought in times of adversity.
+    </p>
+    <div class="image-section">
+        <img src="kuldevimaa.jpeg" alt="Nagnechi Maa Image">
+    </div>
+</div>
+
+<!-- Jayrajsingh History -->
+<div class="history-section">
+    <h2>Jayrajsingh</h2>
+    <p>
+        Kunwar Jayrajsingh Rathore, a stalwart of the Rathore lineage, is remembered for his strategic acumen and his contributions to preserving the heritage of his ancestors.
+    </p>
+    <div class="image-section">
+        <img src="baburathore.jpeg" alt="Jayrajsingh Image">
+    </div>
+</div>
+
+<!-- Gallery Section -->
+<div class="gallery-section">
+    <h2>Pabuji Museum: A Visual Journey</h2>
+    <p>Discover the legendary tales of Pabuji through these captivating images from the museum.</p>
+    <div class="gallery-images">
+        <img src="pabuji 1.jpeg" alt="Pabuji Museum Image 1">
+        <img src="pabuji 2.jpeg" alt="Pabuji Museum Image 2">
+        <img src="pabuji 3.jpeg" alt="Pabuji Museum Image 3">
+        <img src="pabuji 4.jpeg" alt="Pabuji Museum Image 4">
+        <img src="pabuji 5.jpeg" alt="Pabuji Museum Image 5">
+        <img src="pabuji 6.jpeg" alt="Pabuji Museum Image 6">
+        <img src="pabuji 77.jpeg" alt="Pabuji Museum Image 7">
+        <img src="pabuji 8.jpeg" alt="Pabuji Museum Image 8">
+    </div>
+</div>
+
+<!-- Honoring Ancestors Section -->
+<div class="gallery-section">
+    <h2>Honoring Our Great Ancestors</h2>
+    <p>These images depict two of the greatest ancestors who laid the foundation of our family's rich heritage.</p>
+    <div class="gallery-images" style="grid-template-columns: repeat(2, 1fr);">
+        <img src="pabujiii.jpeg" alt="Ancestor 1" title="Great Ancestor 1">
+        <img src="sursiji.jpeg" alt="Ancestor 2" title="Great Ancestor 2">
+    </div>
+</div>
+
+<script>
+    function toggleMoreHistory() {
+        var moreHistory = document.getElementById("more-history");
+        if (moreHistory.style.display === "none" || moreHistory.style.display === "") {
+            moreHistory.style.display = "block";
+        } else {
+            moreHistory.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
